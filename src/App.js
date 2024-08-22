@@ -8,6 +8,13 @@ import About from './pages/About.js'
 function App() {
   return (
     <div>
+      <Navbar />
+      <Home />
+      <About />
+    </div>
+    
+    /* Multi-page routing
+    <div>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -16,6 +23,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
+    */
   );
   
 }
