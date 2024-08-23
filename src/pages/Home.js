@@ -3,7 +3,7 @@ import '../styles/home.css'
 
 function Home() {
   return (
-    <div className="home">
+    <div id="home" className="home">
       <div className="intro" style={{alignItems: 'flex-start'}}>
         <h3>Hello, I'm</h3>
         <h1>Yousef Al-Wahami</h1>

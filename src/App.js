@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, createBrowserRouter, RouterProvider } fro
 
 import Home from './pages/Home.js'
 import About from './pages/About.js'
+import Projects from './pages/Projects.js'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Projects />
     </div>
     
     /* Multi-page routing

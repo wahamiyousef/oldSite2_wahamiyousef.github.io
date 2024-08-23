@@ -1,0 +1,9 @@
+.aboutContainer {
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+.aboutContainer h1 {
+  text-align: center;
+  padding-top: 80px;
+}

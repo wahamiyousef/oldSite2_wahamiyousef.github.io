@@ -12,6 +12,7 @@ import '../styles/navbar.css'
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
@@ -23,7 +24,23 @@ const Navbar = () => {
     } else {
       setIsScrolled(false);
     }
+
+    const sections = ['home', 'about', 'projects', 'contact'];
+    let currentSection = '';
+
+    sections.forEach((section) => {
+      const sectionElement = document.getElementById(section);
+      if (sectionElement) {
+        const rect = sectionElement.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          currentSection = section;
+        }
+      }
+    });
+
+    setActiveSection(currentSection);
   };
+
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -39,26 +56,26 @@ const Navbar = () => {
           <img src={Logo} style={{height: '50px', width: '50px'}} />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <img src={Hamburger} style={{height: '50px', width: '50px'}}/>
+          <img src={Hamburger} style={{height: '50px', width: '50px'}} alt="Menu" />
         </div>
-        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+        <div className={`nav-elements ${showNavbar ? 'active' : ''}`}>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#" className={activeSection === 'home' ? 'active' : ''}>Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a>
             </li>
-            <div>
-              <a class="icons" href="https://www.linkedin.com/in/yousef-al-wahami" target="_blank"><img src={Linkedin}/></a>
-              <a class="icons" href="https://github.com/wahamiyousef" target="_blank"><img src={Github}/></a>
-              <a class="icons" href="mailto:alwahamiyousef@gmail.com"><img src={Email}/></a>
+            <div className='social-icon'>
+              <a className="icons" href="https://www.linkedin.com/in/yousef-al-wahami" target="_blank"><img src={Linkedin} alt="LinkedIn"/></a>
+              <a className="icons" href="https://github.com/wahamiyousef" target="_blank"><img src={Github} alt="GitHub"/></a>
+              <a className="icons" href="mailto:alwahamiyousef@gmail.com"><img src={Email} alt="Email" /></a>
             </div>
             
             {/*

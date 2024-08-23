@@ -12,7 +12,7 @@
   width: 100%;
   padding: 100px 0;
   flex-direction: row;
-  gap: 120px;
+  gap: 10%;
 }
 .intro, .glass{
   /*
@@ -27,6 +27,15 @@
   align-items: center;
   text-align: left;
   flex-direction: column;
+}
+
+.intro h1{
+  font-size: 54px;
+  font-weight: bold;
+}
+.intro h3{
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .glass{
