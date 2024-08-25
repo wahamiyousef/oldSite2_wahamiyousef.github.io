@@ -1,9 +1,10 @@
 .aboutContainer {
-  background-color: aliceblue;
+  background-color: var(--darkBackground);
   height: 100vh;
 }
 
 .aboutContainer h1 {
+  color: var(--text);
   text-align: center;
   padding-top: 80px;
 }
