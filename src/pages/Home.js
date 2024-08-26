@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/home.css'
+import Button from '../components/Button.js'
 
 function Home() {
   return (
@@ -7,6 +8,7 @@ function Home() {
       <div className="intro" style={{alignItems: 'flex-start'}}>
         <h3>Hello, I'm</h3>
         <h1>Yousef Al-Wahami</h1>
+        <Button>Contact Me!</Button>
       </div>
       
 
