@@ -21,6 +21,7 @@ const Button = ({ children, link, onClick, variant = 'primary' }) => {
     border: '1px solid #000000',
     cursor: 'pointer',
     color: '#333333',
+    marginTop: '20px',
   };
 
   const styles = {
@@ -49,7 +50,7 @@ const Button = ({ children, link, onClick, variant = 'primary' }) => {
       onMouseLeave={() => setHover(false)}
       style={combinedStyle}
     >
-      <img src={Plane} style={{height: '30px'}}/>
+      <img src={Plane} style={{height: '20px'}}/>
       {children}
     </a>
   );

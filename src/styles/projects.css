@@ -1,4 +1,12 @@
 .projectsContainer {
   height: 100vh;
-  background-color: aqua;
+  background-color: var(--darkBackground);
+  border-top: 1px solid var(--hoverDarkBackground);
+
+}
+
+.projectsContainer h1 {
+  color: var(--text);
+  text-align: center;
+  padding-top: 80px;
 }
