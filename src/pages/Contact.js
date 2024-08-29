@@ -9,7 +9,7 @@ import Button from '../components/Button'
 function Contact() {
   return (
     <div id='contact' className='contactContainer'>
-      <h1>Contact</h1>
+      <h1>Contact Me</h1>
 
       <div className='contactIcons'>
         <Button link="mailto:alwahamiyousef@gmail.com" photo={Email}>Email Me</Button>

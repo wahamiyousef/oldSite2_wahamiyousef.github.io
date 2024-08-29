@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 15vh;
   color: var(--text);
   border-top: 2px solid var(--hoverDarkBackground);
   background-color: var(--hoverDarkBackground);
