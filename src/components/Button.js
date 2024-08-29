@@ -1,9 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import Logo from '../Logo.svg'
-import Plane from '../assets/paperplane.svg'
 
-const Button = ({ children, link, onClick, variant = 'primary' }) => {
+const Button = ({ children, link, onClick, variant = 'primary', photo }) => {
   const [hover, setHover] = useState(false);
 
 
@@ -12,13 +11,16 @@ const Button = ({ children, link, onClick, variant = 'primary' }) => {
     justifyContent: 'center', alignItems: 'center',
     gap: '8px',
     textDecoration: 'none',
-    padding: '7px 10px',
+    padding: '12px 15px',
     borderRadius: '4px',
+    fontSize: '20px',
+    /*
     borderTop: '1px solid #CCCCCC',
     borderRight: '1px solid #333333',
     borderBottom: '1px solid #333333',
     borderLeft: '1px solid #CCCCCC',
     border: '1px solid #000000',
+    */
     cursor: 'pointer',
     color: '#333333',
     marginTop: '20px',
@@ -32,6 +34,15 @@ const Button = ({ children, link, onClick, variant = 'primary' }) => {
       transition: 'all 300ms',
       color: '#DDDDDD',
       //color: 'black'
+    },
+    contact: {
+      backgroundColor: hover ? '#141414' : '#1E1E1E',
+      transform: hover ? 'translateY(-5px)' : 'translateY(0px)',
+      transition: 'all 300ms',
+      color: '#DDDDDD',
+    },
+    linkedin: {
+      
     },
     secondary: {
       // light mode
@@ -50,7 +61,7 @@ const Button = ({ children, link, onClick, variant = 'primary' }) => {
       onMouseLeave={() => setHover(false)}
       style={combinedStyle}
     >
-      <img src={Plane} style={{height: '20px'}}/>
+      <img src={photo} style={{height: '20px'}}/>
       {children}
     </a>
   );

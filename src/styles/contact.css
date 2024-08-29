@@ -1,0 +1,17 @@
+.contactContainer {
+  background-color: var(--darkBackground);
+  height: 100vh;
+  border-top: 1px solid var(--hoverDarkBackground);
+}
+
+.contactContainer h1 {
+  color: var(--text);
+  text-align: center;
+  padding-top: 80px;
+}
+
+.contactIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

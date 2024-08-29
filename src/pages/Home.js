@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/home.css'
 import Button from '../components/Button.js'
+import Plane from '../assets/paperplane.svg'
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
         <h3>Hello, I'm</h3>
         <h1>Yousef Al-Wahami</h1>
         <h3>An aspiring Software Engineer</h3>
-        <Button>Contact Me!</Button>
+        <Button link="#contact" variant='contact' photo={Plane}>Contact Me!</Button>
       </div>
       
 

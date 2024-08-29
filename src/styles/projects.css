@@ -2,11 +2,27 @@
   height: 100vh;
   background-color: var(--darkBackground);
   border-top: 1px solid var(--hoverDarkBackground);
-
 }
 
 .projectsContainer h1 {
   color: var(--text);
   text-align: center;
   padding-top: 80px;
+}
+
+.projectsCard {
+  position: relative;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  padding: 2rem 1.75rem;
+  background-color: var(--darkBackground);
+  border-radius: 16px;
+  text-align: left;
+}
+.projectsCard:hover {
+  transform: translateY(-7px);
+  background-color: var(--hoverDarkBackground);
 }

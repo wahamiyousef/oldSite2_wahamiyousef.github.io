@@ -48,3 +48,30 @@
   -webkit-backdrop-filter: blur( 1px );
   border-radius: 10px;
 }
+
+
+@media (max-width: 600px) {
+  .home{
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 0;
+    flex-direction: column;
+    gap: 0;
+  }
+  .intro, h1, h3{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: var(--background);
+  }
+  .intro a {
+    margin: 40px auto 40px auto !important;
+  }
+}
+
