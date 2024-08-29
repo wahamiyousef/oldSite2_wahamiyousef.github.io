@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Logo from '../Logo.svg'
 
-const Button = ({ children, link, onClick, variant = 'primary', photo }) => {
+const Button = ({ children, link, onClick, variant = 'primary', photo, target }) => {
   const [hover, setHover] = useState(false);
 
 
@@ -60,6 +60,7 @@ const Button = ({ children, link, onClick, variant = 'primary', photo }) => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       style={combinedStyle}
+      target={target}
     >
       <img src={photo} style={{height: '20px'}}/>
       {children}
