@@ -6,6 +6,7 @@ import Home from './pages/Home.js'
 import About from './pages/About.js'
 import Projects from './pages/Projects.js'
 import Contact from './pages/Contact.js'
+import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </div>
     
     /* Multi-page routing
