@@ -10,7 +10,10 @@ function Home() {
         <h3>Hello, I'm</h3>
         <h1>Yousef Al-Wahami</h1>
         <h3>An aspiring Software Engineer</h3>
-        <Button link="#contact" variant='contact' photo={Plane}>Contact Me!</Button>
+        <div className='buttons'>
+          <Button link="#contact" variant='contact' photo={Plane}>Contact Me!</Button>
+          <Button link="#about" variant='invis'>Learn More</Button>
+        </div>
       </div>
       
 

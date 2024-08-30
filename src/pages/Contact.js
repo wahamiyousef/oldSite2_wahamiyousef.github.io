@@ -11,10 +11,16 @@ function Contact() {
     <div id='contact' className='contactContainer'>
       <h1>Contact Me</h1>
 
-      <div className='contactIcons'>
-        <Button link="mailto:alwahamiyousef@gmail.com" photo={Email}>Email Me</Button>
-        <Button link="https://www.linkedin.com/in/yousef-al-wahami" target="_blank" photo={Linkedin}>Connect on LinkedIn</Button>
+      <div className='contactBox'>
+        <div className='contactParagraph'>
+          <p>Reach out to me</p>
+        </div>
+        <div className='contactIcons'>
+          <Button variant="socials" link="mailto:alwahamiyousef@gmail.com" photo={Email}>Email Me</Button>
+          <Button variant="socials" link="https://www.linkedin.com/in/yousef-al-wahami" target="_blank" photo={Linkedin}>Connect on LinkedIn</Button>
+        </div>
       </div>
+
     </div>
   )
 }

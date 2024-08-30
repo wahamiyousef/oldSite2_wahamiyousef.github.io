@@ -23,7 +23,6 @@ const Button = ({ children, link, onClick, variant = 'primary', photo, target })
     */
     cursor: 'pointer',
     color: '#333333',
-    marginTop: '20px',
   };
 
   const styles = {
@@ -41,8 +40,17 @@ const Button = ({ children, link, onClick, variant = 'primary', photo, target })
       transition: 'all 300ms',
       color: '#DDDDDD',
     },
-    linkedin: {
-      
+    socials: {
+      backgroundColor: hover ? '#141414' : '#1E1E1E',
+      transform: hover ? 'translateY(-5px)' : 'translateY(0px)',
+      transition: 'all 300ms',
+      color: '#DDDDDD',
+    },
+    invis: {
+      backgroundColor: 'rgba(0,0,0,0)',
+      transform: hover ? 'translateY(-5px)' : 'translateY(0px)',
+      transition: 'all 300ms',
+      color: '#DDDDDD',
     },
     secondary: {
       // light mode

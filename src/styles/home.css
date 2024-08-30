@@ -39,6 +39,13 @@
   font-weight: bold;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 40px;
+}
+
 .glass{
   width: 220px;
   height: 220px;
@@ -70,8 +77,13 @@
     flex-direction: column;
     color: var(--background);
   }
-  .intro a {
+  .buttons {
     margin: 40px auto 40px auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 
