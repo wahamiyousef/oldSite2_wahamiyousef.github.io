@@ -10,19 +10,67 @@
   padding-top: 80px;
 }
 
+.projectsBox{
+  margin: auto;
+  max-width: 1000px;
+}
+#projects h1 {
+  padding-bottom: 10vh;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+@media (max-width: 700px) {
+  .projectsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
 .projectsCard {
   position: relative;
   cursor: default;
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 100%;
   padding: 2rem 1.75rem;
-  background-color: var(--darkBackground);
+  background-color: var(--hoverDarkBackground);
   border-radius: 16px;
   text-align: left;
+  transition: 0.3s;
 }
 .projectsCard:hover {
+  transition: 0.3s;
   transform: translateY(-7px);
   background-color: var(--hoverDarkBackground);
+}
+
+.cardHeader {
+  margin-top: -20px;
+  display: flex;
+  padding: .75em 0 !important;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-bottom: none !important;
+}
+
+.cardTitle {
+  font-family: 'montseratt', sans-serif;
+  color: var(--text);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.cardDesc {
+  font-family: 'poppins', sans-serif;
+  color: var(--light-text);
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+.cardTech {
+  font-family: "NTR", sans-serif;
+  color: var(--light-text);
+  font-size: 16px;
 }
