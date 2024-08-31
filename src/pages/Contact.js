@@ -13,7 +13,7 @@ function Contact() {
 
       <div className='contactBox'>
         <div className='contactParagraph'>
-          <p>Reach out to me</p>
+          <p>Feel free to reach out to me!</p>
         </div>
         <div className='contactIcons'>
           <Button variant="socials" link="mailto:alwahamiyousef@gmail.com" photo={Email}>Email Me</Button>

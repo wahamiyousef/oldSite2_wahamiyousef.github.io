@@ -1,6 +1,6 @@
 .contactContainer {
-  background-color: var(--darkBackground);
-  height: 100vh;
+  background-color: var(--background);
+  height: 85vh;
   border-top: 1px solid var(--hoverDarkBackground);
 }
 
@@ -32,5 +32,24 @@
 .contactParagraph {
   border-right: 2px solid var(--hoverDarkBackground);
   padding: 10px 20px 10px 20px;
+  color: var(--text);
+}
 
+@media (max-width: 700px) {
+  .contactBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactParagraph {
+    text-align: center;
+    border-right: 0;
+    width: 80%;
+    border-bottom: 2px solid var(--hoverDarkBackground);
+    padding: 10px 20px 10px 20px;
+    color: var(--text);
+  }
+  .contactIcons{
+    display: flex;
+    flex-direction: column;
+  }
 }

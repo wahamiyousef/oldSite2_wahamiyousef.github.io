@@ -1,6 +1,6 @@
 .projectsContainer {
   height: 100vh;
-  background-color: var(--darkBackground);
+  background-color: var(--background);
   border-top: 1px solid var(--hoverDarkBackground);
 }
 
@@ -26,6 +26,10 @@
 @media (max-width: 700px) {
   .projectsGrid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 0 20px;
+  }
+  .projectsContainer {
+    height: 200vh;
   }
 }
 
@@ -36,7 +40,7 @@
   flex-direction: column;
   position: relative;
   padding: 2rem 1.75rem;
-  background-color: var(--hoverDarkBackground);
+  background-color: var(--darkBackground);
   border-radius: 16px;
   text-align: left;
   transition: 0.3s;
