@@ -5,13 +5,12 @@
   align-items: center;
   height: 15vh;
   color: var(--text);
+  background-color: var(--darkBackground);
   border-top: 2px solid var(--hoverDarkBackground);
-  background-color: var(--hoverDarkBackground);
-  border-top: 1px solid var(--text);
 }
 .footer p {
   width: 80%;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
 }

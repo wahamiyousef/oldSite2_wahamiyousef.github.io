@@ -32,12 +32,6 @@ class Projects extends React.Component {
         link: "https://wahamiyousef.github.io/",
         open: "https://github.com/wahamiyousef/wahamiyousef.github.io"
       },
-      "Fortnite": {
-        desc: "Fortnite!! ",
-        stack: "Fortnite?",
-        link: "",
-        open: "youtube.com/@arartex"
-      }
     };
 
     return (
@@ -55,8 +49,8 @@ class Projects extends React.Component {
                   </div>
                   */}
                   <div className='links'>
-                    {projects[key]["link"] && <a href={projects[key]["link"]}><Link /></a>}
-                    {projects[key]["open"] && <a href={projects[key]["open"]}><GitHub /></a>}
+                    {projects[key]["link"] && <a target="_blank" href={projects[key]["link"]}><Link /></a>}
+                    {projects[key]["open"] && <a target="_blank" href={projects[key]["open"]}><GitHub /></a>}
                   </div>
                 </div>
 
