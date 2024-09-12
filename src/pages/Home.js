@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/home.css'
 import Button from '../components/Button.js'
 import Plane from '../assets/paperplane.svg'
+import Projects from '../assets/projects.png'
 
 function Home() {
   return (
@@ -17,9 +18,16 @@ function Home() {
       </div>
       
 
+      <div style={{alignItems: 'flex-end'}}>
+        <a href="#projects">
+          <img src={Projects} alt='' style={{height:"300px"}}></img>
+        </a>
+      </div>
+      {/* 
       <div className='glass' style={{alignItems: 'flex-end'}}>
        <p>I AM GLASS</p>
       </div>
+      */}
     </div>
   )
 }
