@@ -7,4 +7,31 @@
   color: var(--text);
   text-align: center;
   padding-top: 80px;
+  padding-bottom: 5vh;
+}
+
+.aboutText {
+  width: 85%;
+  padding: 0 7.5% 0 7.5%;
+  color: var(--text);
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.aboutText li {
+  list-style-type: none;
+  text-align: left;
+}
+.aboutText li::before {
+  content: "▹    "
+}
+
+
+.techStack {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(150px,10px));
 }

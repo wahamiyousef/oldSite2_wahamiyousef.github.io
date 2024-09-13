@@ -6,7 +6,7 @@ function About() {
     <div id='about' className='aboutContainer'>
       <h1>About Me</h1>
       <div className='aboutText'>
-        <p>I am currently a student at the University of Windsor studying Computer Science.</p>
+        <p>I am currently a student at the University of Windsor studying Computer Science.</p><br />
         <p>Here are some technologies I work with:</p>
         <ul className='techStack'>
           <li>JavaScript</li>
