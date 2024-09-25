@@ -6,6 +6,9 @@ import Hamburger from '../assets/hamburger.svg'
 import Email from '../assets/email.svg'
 import Linkedin from '../assets/linkedin.svg'
 import Github from '../assets/github.svg'
+import EmailWhite from '../assets/emailWhite.svg'
+import LinkedinWhite from '../assets/linkedinWhite.svg'
+import GithubWhite from '../assets/githubWhite.svg'
 import '../styles/navbar.css'
 
 
@@ -73,9 +76,9 @@ const Navbar = () => {
               <a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a>
             </li>
             <div className='social-icon'>
-              <a className="icons" href="https://www.linkedin.com/in/yousef-al-wahami" target="_blank"><img src={Linkedin} alt="LinkedIn"/></a>
-              <a className="icons" href="https://github.com/wahamiyousef" target="_blank"><img src={Github} alt="GitHub"/></a>
-              <a className="icons" href="mailto:alwahamiyousef@gmail.com"><img src={Email} alt="Email" /></a>
+              <a className="icons" href="https://www.linkedin.com/in/yousef-al-wahami" target="_blank"><img src={LinkedinWhite} alt="LinkedIn"/></a>
+              <a className="icons" href="https://github.com/wahamiyousef" target="_blank"><img src={GithubWhite} alt="GitHub"/></a>
+              <a className="icons" href="mailto:alwahamiyousef@gmail.com"><img src={EmailWhite} alt="Email" /></a>
             </div>
             
             {/*
