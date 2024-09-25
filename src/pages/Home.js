@@ -20,7 +20,7 @@ function Home() {
 
       <div style={{alignItems: 'flex-end'}}>
         <a href="#projects">
-          <img src={Projects} alt='' style={{height:"300px"}}></img>
+          <img src={Projects} alt='' className='projectPic' style={{height:"300px"}}></img>
         </a>
       </div>
       {/* 
