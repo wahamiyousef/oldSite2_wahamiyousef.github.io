@@ -17,7 +17,7 @@ function About() {
           <li>Java</li>
           <li>C#</li>
         </ul>
-        <Button>Resume</Button>
+        <Button link='assets/resume.pdf'>Resume</Button>
       </div>
     </div>
   )
