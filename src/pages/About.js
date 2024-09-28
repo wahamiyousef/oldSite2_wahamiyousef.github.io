@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/about.css'
+import Button from '../components/Button'
 
 function About() {
   return (
@@ -16,6 +17,7 @@ function About() {
           <li>Java</li>
           <li>C#</li>
         </ul>
+        <Button>Resume</Button>
       </div>
     </div>
   )
